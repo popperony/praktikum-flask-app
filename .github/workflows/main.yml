@@ -51,6 +51,7 @@ jobs:
          host: ${{ secrets.HOST }}
          username: ${{ secrets.USER }}
          key: ${{ secrets.SSH_KEY }}
+         port: 22
          script: |
            sudo docker pull peronium/flask_app
            sudo docker stop $(docker ps -a -q)
