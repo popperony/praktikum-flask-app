@@ -48,8 +48,8 @@ jobs:
      - name: executing remote ssh commands to deploy
        uses: appleboy/ssh-action@master
        with:
-         host: ${{ secrets.HOST }}
-         username: ${{ secrets.USER }}
+         host: 130.193.35.218
+         username: peronium
          key: ${{ secrets.SSH_KEY }}
          port: 22
          script: |
